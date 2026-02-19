@@ -8,14 +8,13 @@
 </head>
 <body>
     <header>
-        <a href="inicio.html" class="logo">
-            <img src="Logo.jpg.jpeg" alt="Logo de Gold Task">
-            <h2 class="title">Gold Task</h2>
-        </a>
-        <nav>
-            <a href="#">Iniciar  Sesion</a>
-            <a href="#">Registrarse</a>
-        </nav>
+    <img src="Logo.jpg.jpeg" alt="Logo de Gold Task" class="logo-img">
+    <h2 class="title">Gold Task</h2>
+    <div class="menu-icon">☰</div>
+    <nav class="nav-links">
+        <a href="#">Iniciar Sesión</a>
+        <a href="#">Registrarse</a>
+    </nav>
     </header>
     <main>
         <section>
@@ -60,5 +59,14 @@ En Fantasy, la discreción es una prioridad. Tu información y actividad están 
   <p>&copy; 2025 Gold Task - Todos los derechos reservados.</p>
   <p>Síguenos en redes sociales</p>
 </footer>
+<script>
+const menuIcon = document.querySelector(".menu-icon");
+const navLinks = document.querySelector(".nav-links");
+
+menuIcon.addEventListener("click", () => {
+    navLinks.style.display = 
+        navLinks.style.display === "flex" ? "none" : "flex";
+});
+</script>
 </body>
 </html>
